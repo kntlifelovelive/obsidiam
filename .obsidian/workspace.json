@@ -1,0 +1,215 @@
+{
+  "main": {
+    "id": "216131c7ea6f4699",
+    "type": "split",
+    "children": [
+      {
+        "id": "f1e149ce8e9089dc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "98ccb6df0d164cf4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linux Terminal Customize/Starship-UI.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Starship-UI"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7e5d17435ef7fa2d",
+    "type": "split",
+    "children": [
+      {
+        "id": "4388f898fbc1d337",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d73b6bb754e71271",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "1c2e65d1294f67d2",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "f47d5f0318a214d9",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ac1cfa56db0e153a",
+    "type": "split",
+    "children": [
+      {
+        "id": "4f71db53ccfcbf1b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0a513df44cccf203",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "BashscriptNote/Arithmetic-Expansion-&-Operators.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Arithmetic-Expansion-&-Operators"
+            }
+          },
+          {
+            "id": "0611a774cdc5ab2c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "BashscriptNote/Arithmetic-Expansion-&-Operators.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Arithmetic-Expansion-&-Operators"
+            }
+          },
+          {
+            "id": "4a2979065d1969f7",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "46ff318248e64cc6",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "BashscriptNote/Arithmetic-Expansion-&-Operators.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Arithmetic-Expansion-&-Operators"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "d73b6bb754e71271",
+  "lastOpenFiles": [
+    "Terminal prompt customized/Starship prompt customized.md",
+    "Terminal prompt customized",
+    "LinuxTerminalCustomize/Linux Terminal Customize.md",
+    "LinuxTerminalCustomize",
+    "CamphishNote/Camphish Usage Note.md",
+    "CamphishNote/Ngrok Manual Setup.md",
+    "CamphishNote",
+    "Linux Terminal Customize/Lolcat-terminal color.md",
+    "Linux Terminal Customize/Linux-Terminal-Customize.md",
+    "Linux Terminal Customize/Ghostty-config.md",
+    "GitHub/SSH=Key ဖန်တီးခြင်း.md",
+    "Docker/Docker Kali GUI ModeError-command.md",
+    "Docker/Docker command and kali gui.md",
+    "PythonNote/Python-Regular-Expression.md",
+    "PythonNote/Python-Generator Expression.md",
+    "PythonNote/Python Virtual Environment တည်ဆောက်ခြင်း.md",
+    "PythonNote/Python String Method 30.md",
+    "PythonNote/Python Set{}method.md",
+    "PythonNote/Python Enviroment တည်ဆောက်ခြင်း.md",
+    "PythonNote/Python Enviroment Error.md",
+    "PythonNote/Python Collection-Module-In-Python.md",
+    "PythonNote/Python all () any().md",
+    "SocialAttack/Ngrok Manual Setup.md",
+    "SocialAttack/Camphish Usage Note.md",
+    "SocialAttack/Camphish.md",
+    "SocialAttack/Camphish Attacking lab.md",
+    "SocialAttack",
+    "Docker/Docker Basic.md",
+    "Docker/Docker Lab.md",
+    "Linux advance commands/Linux Encryption/Encryption-&-Decryption-BashScript.md",
+    "ISO-Installnewmay"
+  ]
+}
