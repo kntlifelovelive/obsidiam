@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux Terminal Customize/Starship-UI.md",
+                "file": "Linux Terminal Customize/Terminal Title bar live clock.md",
                 "mode": "preview",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Starship-UI"
+              "title": "Terminal Title bar live clock"
             }
           }
         ]
@@ -180,15 +180,20 @@
   },
   "active": "d73b6bb754e71271",
   "lastOpenFiles": [
-    "Terminal prompt customized/Starship prompt customized.md",
+    "Linux Terminal Customize/Starship prompt customized.md",
+    "Linux Terminal Customize/Linux Terminal Customize.md",
+    "Linux Terminal Customize/Terminal Title bar live clock.md",
+    "Linux Terminal Customize/Linux-Terminal-Customize.md",
+    "Docker/Dockerfile.md",
+    "Docker/Docker Resources limit.md",
+    "Docker/Live check.md",
+    "Linux Terminal Customize/Starship-UI.md",
     "Terminal prompt customized",
-    "LinuxTerminalCustomize/Linux Terminal Customize.md",
     "LinuxTerminalCustomize",
     "CamphishNote/Camphish Usage Note.md",
     "CamphishNote/Ngrok Manual Setup.md",
     "CamphishNote",
     "Linux Terminal Customize/Lolcat-terminal color.md",
-    "Linux Terminal Customize/Linux-Terminal-Customize.md",
     "Linux Terminal Customize/Ghostty-config.md",
     "GitHub/SSH=Key ဖန်တီးခြင်း.md",
     "Docker/Docker Kali GUI ModeError-command.md",
@@ -204,12 +209,7 @@
     "PythonNote/Python all () any().md",
     "SocialAttack/Ngrok Manual Setup.md",
     "SocialAttack/Camphish Usage Note.md",
-    "SocialAttack/Camphish.md",
-    "SocialAttack/Camphish Attacking lab.md",
     "SocialAttack",
-    "Docker/Docker Basic.md",
-    "Docker/Docker Lab.md",
-    "Linux advance commands/Linux Encryption/Encryption-&-Decryption-BashScript.md",
     "ISO-Installnewmay"
   ]
 }
