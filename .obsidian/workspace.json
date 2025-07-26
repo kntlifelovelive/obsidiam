@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux Terminal Customize/Terminal Title bar live clock.md",
+                "file": "LinuxDesktopIcon/Softlink&DesktopIcon.md",
                 "mode": "preview",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Terminal Title bar live clock"
+              "title": "Softlink&DesktopIcon"
             }
           }
         ]
@@ -178,12 +178,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d73b6bb754e71271",
+  "active": "98ccb6df0d164cf4",
   "lastOpenFiles": [
-    "Linux Terminal Customize/Starship prompt customized.md",
-    "Linux Terminal Customize/Linux Terminal Customize.md",
     "Linux Terminal Customize/Terminal Title bar live clock.md",
+    "LinuxDesktopIcon/Softlink&DesktopIcon.md",
+    "LinuxDesktopIcon",
+    "Linux Terminal Customize/Linux Terminal Customize.md",
     "Linux Terminal Customize/Linux-Terminal-Customize.md",
+    "Script-cut-world/Full-build-deb.md",
+    "Script-cut-world/Deb-file-build.md",
+    "Script-cut-world/Ram-cleaner.md",
+    "Script-cut-world/TrashCan.md",
+    "100 linux commands/Trash-command.md",
+    "Script-cut-world",
+    "Linux Terminal Customize/Starship prompt customized.md",
     "Docker/Dockerfile.md",
     "Docker/Docker Resources limit.md",
     "Docker/Live check.md",
@@ -203,12 +211,6 @@
     "PythonNote/Python Virtual Environment တည်ဆောက်ခြင်း.md",
     "PythonNote/Python String Method 30.md",
     "PythonNote/Python Set{}method.md",
-    "PythonNote/Python Enviroment တည်ဆောက်ခြင်း.md",
-    "PythonNote/Python Enviroment Error.md",
-    "PythonNote/Python Collection-Module-In-Python.md",
-    "PythonNote/Python all () any().md",
-    "SocialAttack/Ngrok Manual Setup.md",
-    "SocialAttack/Camphish Usage Note.md",
     "SocialAttack",
     "ISO-Installnewmay"
   ]
