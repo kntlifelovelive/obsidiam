@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LinuxDesktopIcon/Softlink&DesktopIcon.md",
+                "file": "Linux Terminal Customize/Terminal Title bar live clock.md",
                 "mode": "preview",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Softlink&DesktopIcon"
+              "title": "Terminal Title bar live clock"
             }
           }
         ]
@@ -180,28 +180,32 @@
   },
   "active": "98ccb6df0d164cf4",
   "lastOpenFiles": [
-    "Linux Terminal Customize/Terminal Title bar live clock.md",
+    "Pasted image 20250729195508.png",
+    "Linux Terminal Customize/Lolcat-terminal color.md",
+    "Linux Terminal Customize/Starship-UI.md",
+    "Pasted image 20250729195312.png",
+    "Pasted image 20250728083232.png",
+    "README.md",
+    "100 linux commands/Trash-command.md",
     "LinuxDesktopIcon/Softlink&DesktopIcon.md",
-    "LinuxDesktopIcon",
-    "Linux Terminal Customize/Linux Terminal Customize.md",
-    "Linux Terminal Customize/Linux-Terminal-Customize.md",
     "Script-cut-world/Full-build-deb.md",
     "Script-cut-world/Deb-file-build.md",
     "Script-cut-world/Ram-cleaner.md",
     "Script-cut-world/TrashCan.md",
-    "100 linux commands/Trash-command.md",
-    "Script-cut-world",
+    "Linux Terminal Customize/Linux-Terminal-Customize.md",
+    "Linux Terminal Customize/Linux Terminal Customize.md",
+    "Linux Terminal Customize/Terminal Title bar live clock.md",
     "Linux Terminal Customize/Starship prompt customized.md",
+    "LinuxDesktopIcon",
+    "Script-cut-world",
     "Docker/Dockerfile.md",
     "Docker/Docker Resources limit.md",
     "Docker/Live check.md",
-    "Linux Terminal Customize/Starship-UI.md",
     "Terminal prompt customized",
     "LinuxTerminalCustomize",
     "CamphishNote/Camphish Usage Note.md",
     "CamphishNote/Ngrok Manual Setup.md",
     "CamphishNote",
-    "Linux Terminal Customize/Lolcat-terminal color.md",
     "Linux Terminal Customize/Ghostty-config.md",
     "GitHub/SSH=Key ဖန်တီးခြင်း.md",
     "Docker/Docker Kali GUI ModeError-command.md",
@@ -209,8 +213,6 @@
     "PythonNote/Python-Regular-Expression.md",
     "PythonNote/Python-Generator Expression.md",
     "PythonNote/Python Virtual Environment တည်ဆောက်ခြင်း.md",
-    "PythonNote/Python String Method 30.md",
-    "PythonNote/Python Set{}method.md",
     "SocialAttack",
     "ISO-Installnewmay"
   ]

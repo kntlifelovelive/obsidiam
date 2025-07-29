@@ -201,3 +201,33 @@ desktop-file-validate ~/.local/share/applications/ramcleaner.desktop
 ဆိုပြီး `.desktop` launcher မှာ syntax error ရှိ/မရှိစစ်လို့ရတယ်။
 
 ---
+
+
+```bash 
+
+sudo ln -s /home/bubu/trashcan/trashcan.sh /usr/bin/trashcan
+cp trashcan.desktop ~/.local/share/applications/
+ls ~/.local/share/applications/
+sudo chmod +x ~/.local/share/applications/trashcan.desktop
+
+[Desktop Entry]
+Name=TrashCan
+Comment=A colorful CLI Trash Manager script
+Exec=gnome-terminal -- bash -c "/usr/bin/trashcan; exec bash"
+Icon=/usr/share/pixmaps/trashcan.png
+Terminal=false
+Type=Application
+Categories=Utility;
+
+
+
+[Desktop Entry]
+Name=RamCleaner
+Comment=A colorful CLI Trash Manager script
+Exec=gnome-terminal -- bash -c "/usr/bin/ramcleaner; exec bash"
+Icon=/home/bubu/.config/ramcleaner/ramcleaner.png
+Terminal=true
+Type=Application
+Categories=Utility;
+
+```
