@@ -76,7 +76,6 @@ You have 8 CPU cores and 15 GB RAM available.
 ---
 
 
----
 
 ### ✅ Step-by-Step: CLI Bash Code ကို alias လုပ်ခြင်း
 
@@ -99,11 +98,13 @@ You have 4 CPU cores and 7 GB RAM available.
 
 nano ~/.zshrc
 
-🔽 အောက်ဆုံးမှာ ထည့်ပါ
+
+
 
 ```
 alias sysinfo='echo "You have $(nproc) CPU cores and $(free -g | awk '\''/Mem:/ {print \$2}'\'') GB RAM available."'
 ```
+
 
 💾 Save (Ctrl+O → Enter → Ctrl+X)
 📌 ပြီးရင် reload:

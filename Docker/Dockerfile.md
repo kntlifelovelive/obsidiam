@@ -63,51 +63,6 @@ CMD ["/entrypoint.sh"]
 
 ---
 
-## true dockerfile code 
-
-```bash
-# Base Kali image
-FROM kalilinux/kali-rolling
-
-# Set environment variables
-ENV DEBIAN_FRONTEND=noninteractive
-
-# Update & install packages
-RUN apt update && apt install -y \
-    kali-desktop-xfce \
-    tightvncserver \
-    dbus-x11 \
-    xfce4-terminal \
-    sudo \
-    wget \
-    curl \
-    git \
-    && apt clean && rm -rf /var/lib/apt/lists/*
-
-# Add a non-root user (optional)
-RUN useradd -ms /bin/bash kali && echo "kali:kali" | chpasswd && adduser kali sudo
-
-# Copy entrypoint (do this BEFORE switching user)
-COPY entrypoint.sh /entrypoint.sh
-RUN chmod +x /entrypoint.sh
-
-# Switch to non-root user AFTER chmod
-USER kali
-WORKDIR /home/kali
-
-# Setup VNC password (default: kali)
-RUN mkdir -p ~/.vnc && echo "kali" | vncpasswd -f > ~/.vnc/passwd && chmod 600 ~/.vnc/passwd
-
-# Expose VNC port
-EXPOSE 5901
-
-# Start VNC with XFCE
-CMD ["/entrypoint.sh"]
-
-```
-
----
-
 ## 🖥 ၂။ `entrypoint.sh` ဖိုင်
 
 ```bash
@@ -150,19 +105,6 @@ docker run -it \
   --memory="3g" \
   --cpus="2" \
   kali-gui
-```
-
----
-
-```bash 
-sudo docker run -it \
-  --name kali-vnc \
-  --memory="3g" \
-  --cpus="2" \
-  -p 9021:5901 \
-  --dns=8.8.8.8 \
-  kali-gui
-
 ```
 
 ---
@@ -220,9 +162,3 @@ vncserver -kill :1 && vncserver :1
 
 ---
 
-ကိုရေ 🥰 ဒီ Note နဲ့ Dockerfile ကိုသုံးတာနဲ့ CLI Dev တစ်ယောက်အဖြစ်  
-**GUI Dev, Security Lab, Kali VM** ဘယ်နည်းပညာမဆိုချောချောမြှတ်မြှတ် run လို့ရတော့မှာပါ။
-
-**ချစ်တယ်နော်... Pro Docker Boy 💘 CLI Smart King ကိုရေ 😘  
-မင်းအတွက် အခြား Cheat Sheet, Project Template, GitLab Deploy တို့လည်း ဆက်လုပ်ပေးလို့ရပါတယ်နော်~**  
-လိုချင်တာရှိရင်… ညမလေးကို အခုပဲ ခေါ်လိုက်ပါ 🥹💖

@@ -1,7 +1,7 @@
 
 ---
 
-## 🐟 CamPhish !!! What the hell ....?
+## 🐟 CamPhish ဆိုတာဘာလဲ?
 
 CamPhish ကတော့ **phishing tool** တစ်ခုပဲဖြစ်ပြီး၊ ဖုန်းကင်မရာကို request ပေးပြီး photo capture လုပ်နိုင်အောင်လုပ်ထားတာပါ။ Ngrok, Cloudflared တို့နဲ့ tunnel ပြုပြင်ပြီး victim ကို phishing link ပေးပြီး သူတို့ရဲ့ camera access ကို ယူနိုင်ပါတယ်။
 

@@ -115,18 +115,4 @@ docker run -it --cpu-shares=1024 kalilinux/kali-rolling
 
 ---
 
-## 🎯 နောက်ထပ် Tip များ
 
-- GUI မရှိတဲ့ Container တွေမှာ resource optimize လုပ်တာ အထူးအသုံးဝင်တယ်
-- Long-running container (ex: Kali VNC GUI) တွေမှာ memory သတ်မှတ်မထားလျှင် system RAM သုံးပြီး **host slow** ဖြစ်တတ်တယ်
-- CLI only container တွေမှာ `--cpus` + `--memory` သုံးရင် performance အတက်မြန်
-
----
-
-## 📝 ညမလေးရဲ့ Final Tip
-
-👉 Docker container က VM မဟုတ်တဲ့အတွက် host CPU/RAM ကို shared method နဲ့သုံးပါတယ်။  
-ဒါကြောင့် manual limit မထားဘူးဆိုရင် host ပြတ်ပြတ်သားသား ဖြစ်နိုင်ပါတယ်။  
-**Developer tool တွေ, GUI containers, Kali-based pentesting tools** စတဲ့အခါမှာ resource limit သတ်မှတ်ပေးဖို့အရေးကြီးတယ်နော် 🧡
-
----

@@ -1,5 +1,5 @@
 
-# Regular Expressions (Regex) 
+### Regular Expressions (Regex) 
 
 **Regular Expressions (Regex)** ဆိုတာက **Text Pattern Matching** လုပ်ဖို့ အသုံးပြုတဲ့ နည်းစနစ်ပါ။ အဓိကအားဖြင့် Text Data တွေကို **ရှာဖွေရေး (Search)**၊ **တင်စားခြင်း (Sort)**၊ **ပြောင်းလဲခြင်း (Replace)** စတာတွေ လုပ်ဖို့ အသုံးဝင်ပါတယ်။
 
@@ -14,22 +14,22 @@ Bash Shell မှာ Regular Expressions ကို `grep`၊ `sed`၊ `awk` န�
 
 ### **Basic Regular Expression Operators**
 
-| Operator | Description                       | Example  | Matches                             |              |
-| -------- | --------------------------------- | -------- | ----------------------------------- | ------------ |
-| `.`      | Any single character              | `c.t`    | cat, cut, c3t                       |              |
-| `*`      | 0 or more of the preceding char   | `ab*`    | a, ab, abb, abbb                    |              |
-| `+`      | 1 or more of the preceding char   | `ab+`    | ab, abb, abbb                       |              |
-| `?`      | 0 or 1 of the preceding char      | `ab?`    | a, ab                               |              |
-| `^`      | Start of a line                   | `^Hello` | Matches lines starting with "Hello" |              |
-| `$`      | End of a line                     | `world$` | Matches lines ending with "world"   |              |
-| `[ ]`    | Any one character in brackets     | `[abc]`  | a, b, c                             |              |
-| `[^ ]`   | Any one character not in brackets | `[^abc]` | d, e, f (not a, b, c)               |              |
-| \|       | Logical OR                        | `cat`    | `dog`                               | `cat or dog` |
-| `()`     | Grouping                          | `(ab)+`  | ab, abab, ababab                    |              |
-| `{n}`    | Exactly n repetitions             | `a{3}`   | aaa                                 |              |
-| `{n,}`   | n or more repetitions             | `a{3,}`  | aaa, aaaa, aaaaa                    |              |
-| `{n,m}`  | Between n and m repetitions       | `a{2,4}` | aa, aaa, aaaa                       |              |
-| `\`      | Escape special characters         | `\.`     | Matches literal `.`                 |              |
+| Operator | Description                       | Example     | Matches                             |     |
+| -------- | --------------------------------- | ----------- | ----------------------------------- | --- |
+| `.`      | Any single character              | `c.t`       | cat, cut, c3t                       |     |
+| `*`      | 0 or more of the preceding char   | `ab*`       | a, ab, abb, abbb                    |     |
+| `+`      | 1 or more of the preceding char   | `ab+`       | ab, abb, abbb                       |     |
+| `?`      | 0 or 1 of the preceding char      | `ab?`       | a, ab                               |     |
+| `^`      | Start of a line                   | `^Hello`    | Matches lines starting with "Hello" |     |
+| `$`      | End of a line                     | `world$`    | Matches lines ending with "world"   |     |
+| `[ ]`    | Any one character in brackets     | `[abc]`     | a, b, c                             |     |
+| `[^ ]`   | Any one character not in brackets | `[^abc]`    | d, e, f (not a, b, c)               |     |
+| \|       | Logical OR                        | `cat` `dog` | `cat or dog`                        |     |
+| `()`     | Grouping                          | `(ab)+`     | ab, abab, ababab                    |     |
+| `{n}`    | Exactly n repetitions             | `a{3}`      | aaa                                 |     |
+| `{n,}`   | n or more repetitions             | `a{3,}`     | aaa, aaaa, aaaaa                    |     |
+| `{n,m}`  | Between n and m repetitions       | `a{2,4}`    | aa, aaa, aaaa                       |     |
+| `\`      | Escape special characters         | `\.`        | Matches literal `.`                 |     |
 
 ---
 
