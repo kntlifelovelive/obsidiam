@@ -189,7 +189,7 @@ console.log(doMath(3, 4, multiply)); // Output: 12
 
 ---
 
-# **🔥 အဆုံးသတ် (Conclusion)**
+# **Conclusion**
 ✔ **Function** ဆိုတာ reusable code block တစ်ခုဖြစ်ပြီး **function declaration, function expression, arrow function** နဲ့ရေးနိုင်တယ်။  
 ✔ **Parameter & Argument** တွေသုံးပြီး data တွေကို input ထည့်နိုင်တယ်။  
 ✔ **Default Parameters, Rest Parameters** တို့နဲ့ argument အလွယ်တကူ pass လုပ်နိုင်တယ်။  
