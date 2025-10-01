@@ -1,14 +1,14 @@
 
 
-Linux မှာ `trash` ဆိုတာက GUI Desktop Environment (GNOME, KDE, etc) တွေရဲ့ "Recycle Bin" (Windows) / "Trash" (macOS) နဲ့တူတဲ့ system တစ်ခုပဲဖြစ်ပါတယ်။
+*Linux မှာ `trash` ဆိုတာက GUI Desktop Environment (GNOME, KDE, etc) တွေရဲ့ "Recycle Bin" (Windows) / "Trash" (macOS) နဲ့တူတဲ့ system တစ်ခုပဲဖြစ်ပါတယ်။*
 
-CLI (Terminal) မှာ `trash` ကိုထိန်းချုပ်ဖို့ GUI ရဲ့ Trash folder ကိုသုံးဖို့မလွယ်တာကြောင့် `trash-cli` ဆိုတဲ့ command-line tool တစ်ခုပြုလုပ်ထားပါတယ်။
+*CLI (Terminal) မှာ `trash` ကိုထိန်းချုပ်ဖို့ GUI ရဲ့ Trash folder ကိုသုံးဖို့မလွယ်တာကြောင့် `trash-cli` ဆိုတဲ့ command-line tool တစ်ခုပြုလုပ်ထားပါတယ်။*
 
 ---
 
-## 🧺 `trash-cli` ကိုသုံးတာ
+##  `trash-cli` 
 
-### ✅ ၁။ Install လုပ်ဖို့
+### 1. Install 
 
 ```bash
 sudo apt install trash-cli
@@ -16,13 +16,12 @@ sudo apt install trash-cli
 
 ---
 
-### 📦 ၂။ ဖိုင်တစ်ခုကို Trash ထဲကို Move လုပ်ဖို့
+### 2. ဖိုင်တစ်ခုကို Trash ထဲကို Move 
 
 ```bash
 trash-put filename
 ```
 
-ตัวอย่าง:
 
 ```bash
 trash-put myfile.txt
@@ -30,7 +29,7 @@ trash-put myfile.txt
 
 ---
 
-### 📂 ၃။ Trash ထဲမှာရှိတဲ့ ဖိုင်တွေကို `ls` လိုမျိုးကြည့်ချင်တယ်ဆိုရင်
+### 3. Trash ထဲမှာရှိတဲ့ ဖိုင်တွေကို `ls` လိုမျိုးကြည့်ချင်တယ်ဆိုရင်
 
 ```bash
 trash-list
@@ -38,13 +37,13 @@ trash-list
 
 ---
 
-### ❌ ၄။ Trash ထဲကဖိုင်တွေကို အကုန်လုံးဖျက်ချင်တယ် (empty trash)
+### 4. Trash ထဲကဖိုင်တွေကို အကုန်လုံးဖျက်ချင်တယ် (empty trash)
 
 ```bash
 trash-empty
 ```
 
-👉 တချို့ဆိုရင် argument ပေးနိုင်တယ်။ (နောက်ဆုံး X ရက်အကြာကြာကိုပဲဖျက်မယ်)
+==> တချို့ဆိုရင် argument ပေးနိုင်တယ်။ (နောက်ဆုံး X ရက်အကြာကြာကိုပဲဖျက်မယ်)
 
 ```bash
 trash-empty 7   # 7 ရက်ကျော်တဲ့အဖိုင်တွေကိုပဲဖျက်မယ်
@@ -52,7 +51,7 @@ trash-empty 7   # 7 ရက်ကျော်တဲ့အဖိုင်တွေ
 
 ---
 
-### 🔙 ၅။ Trash ထဲကဖိုင်ကို ပြန်ယူချင်တယ်ဆိုရင်
+### 5. Trash ထဲကဖိုင်ကို ပြန်ယူချင်တယ်ဆိုရင်
 
 ```bash
 trash-restore
@@ -62,7 +61,7 @@ trash-restore
 
 ---
 
-### 🛑 Trash folder ကိုသိချင်တယ်ဆိုရင်
+###  Trash folder ကိုသိချင်တယ်ဆိုရင်
 
 GNOME သုံးနေရင် Trash ထဲကဖိုင်တွေဟာ ဒီလမ်းကြောင်းထဲမှာပါ:
 
@@ -78,7 +77,7 @@ Metadata (ဖျက်တဲ့ရက်စွဲတွေ၊ original path) ဆ
 
 ---
 
-## 📝 အကျဉ်းချုပ်
+## Summary
 
 |လုပ်ဆောင်ချက်|Command|
 |---|---|
