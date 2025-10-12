@@ -22,8 +22,6 @@ find . ! -name 'keep.txt' -delete
 ```
 
 
----
-
 ###  `rm -rf`  glob pattern 
 **Global Pattern**
 - Terminal in first command `shopt -s extglob` 

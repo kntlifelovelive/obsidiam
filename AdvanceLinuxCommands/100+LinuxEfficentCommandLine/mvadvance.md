@@ -9,7 +9,6 @@
 shopt -s extglob
 ```
 
----
 
 ### 2. Basic usage
 
@@ -22,7 +21,6 @@ mv !(keep) target_folder/
 
  - `keep/` ကို မရွှေ့ဘဲ အခြားအကုန်ကို `target_folder/` ထဲကိုရွှေ့မယ်
 
----
 
 ### 3. Multiple folders/files ချန်
 
@@ -39,7 +37,6 @@ mv !(@(bubu.txt|dudu.txt|teti15)) teti15/
  - `keep1/`, `keep2/`, `logs/`, `target1/` မရွှေ့ဘဲ  
  - အခြား folder/file အကုန် `target1/` ထဲကိုရွှေ့မယ်
 
----
 
 ### 4. Pattern explanation
 
@@ -47,16 +44,9 @@ mv !(@(bubu.txt|dudu.txt|teti15)) teti15/
 - `@(a|b|c)` → `a` နဲ့ `b` နဲ့ `c` 
 - `*` → wildcard, 
 - `?` → 
-
----
-
-
-
----
-
- - Short summary:  
- - `mv !(keep) target/` = keep မဟုတ်တဲ့ အကုန် target ထဲ  
- - `mv !(@(a|b|c)) target/` = a,b,c မဟုတ်တဲ့ အကုန် target ထဲ
+- Short summary:  
+- `mv !(keep) target/` = keep မဟုတ်တဲ့ အကုန် target ထဲ  
+- `mv !(@(a|b|c)) target/` = a,b,c မဟုတ်တဲ့ အကုန် target ထဲ
 
 ---
 

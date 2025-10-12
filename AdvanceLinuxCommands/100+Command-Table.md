@@ -8,9 +8,9 @@
 | 3   | **[[Cd]]**    | How to Change Current Working Directory in Linux – _15 Examples              |
 | 4   | **[[clear]]** | How to Clear Terminal Screen in Linux – _4 Examples_                         |
 | 5   | **[[mkdir]]** | How to Create Directories in Linux – _6 Examples_                            |
-| 6   | **mv**        | How to Move or Rename Files and Directories in Linux – _9 Examples_          |
-| 7   | **cp**        | How to Copy Files and Directories in Linux – _14 Examples_                   |
-| 8   | **rmdir**     | How to Remove Empty Directories in Linux – _5 Examples_                      |
+| 6   | **[[mv]]**    | How to Move or Rename Files and Directories in Linux – _9 Examples_          |
+| 7   | **[[cp]]**    | How to Copy Files and Directories in Linux – _14 Examples_                   |
+| 8   | **[[rmdir]]** | How to Remove Empty Directories in Linux – _5 Examples_                      |
 | 9   | **touch**     | How to Change or Modify Timestamps of File or Directory – _8 Examples_       |
 | 10  | **cat**       | How to Print or View Contents of File in Linux – _13 Examples_               |
 | 11  | **echo**      | How to Print Line of Text or String in Linux – _15 Examples_                 |
