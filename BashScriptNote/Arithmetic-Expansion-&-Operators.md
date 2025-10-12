@@ -1,12 +1,9 @@
 
-### Arithmetic Expansion & Operators
----
 
 **Arithmetic Expansion** ဆိုတာက **Shell ထဲမှာ Mathematical Calculations** (ဂဏန်း တွက်ချက်မှု) တွေကို လုပ်ဆောင်ပေးတဲ့ နည်းလမ်းတစ်ခုပါ။ Shell ထဲမှာ **$((expression))** ဆိုတဲ့ Syntax ကို အသုံးပြုပြီး ဂဏန်းတွေကို တွက်ချက်နိုင်တယ်။
 
----
+#### **Arithmetic Expansion Syntax**
 
-## **Arithmetic Expansion Syntax**
 ```bash
 $((expression))
 ```
@@ -14,10 +11,10 @@ $((expression))
 - **`$((...))`** သည် Arithmetic Expansion ကို ပြုလုပ်ရန် အသုံးပြုသည်။
 - **`expression`** ထဲမှာ **Mathematical Operators** တွေကို သုံးနိုင်တယ်။
 
----
 
-## **Arithmetic Operators in Bash**
-Bash မှာ အသုံးပြုနိုင်တဲ့ **Arithmetic Operators** တွေက အောက်ပါအတိုင်းပါ:
+
+#### **Arithmetic Operators in Bash**
+Bash မှာ အသုံးပြုနိုင်တဲ့ **Arithmetic Operators** 
 
 | Operator | Description                 | Example           | Result   |
 |----------|-----------------------------|-------------------|----------|
@@ -32,18 +29,19 @@ Bash မှာ အသုံးပြုနိုင်တဲ့ **Arithmetic Ope
 | `+=`     | Add and Assign             | `x += 3`         | Add `3` to `x` |
 | `-=`     | Subtract and Assign        | `x -= 3`         | Subtract `3` from `x` |
 
----
 
-## **Examples of Arithmetic Expansion**
+### **Examples of Arithmetic Expansion**
 
-### **1. Basic Calculations**
+#### **1. Basic Calculations**
+
 ```bash
 result=$((5 + 3))
 echo $result
 # Output: 8
 ```
 
-### **2. Using Variables**
+#### **2. Using Variables**
+
 ```bash
 a=10
 b=5
@@ -52,14 +50,16 @@ echo $sum
 # Output: 15
 ```
 
-### **3. Modulus (Remainder)**
+#### **3. Modulus (Remainder)**
+
 ```bash
 remainder=$((10 % 3))
 echo $remainder
 # Output: 1
 ```
 
-### **4. Increment/Decrement**
+#### **4. Increment/Decrement**
+
 ```bash
 x=5
 ((x++))
@@ -71,16 +71,16 @@ echo $x
 # Output: 5
 ```
 
-### **5. Complex Expressions**
+#### **5. Complex Expressions**
+
 ```bash
 result=$(( (5 + 3) * 2 - 1 ))
 echo $result
 # Output: 15
 ```
 
----
 
-## **Comparison Operators in Arithmetic Expansion**
+### **Comparison Operators in Arithmetic Expansion**
 Bash Arithmetic Expansion မှာ **Comparison Operators** တွေကို သုံးပြီး Comparison လုပ်နိုင်တယ်။
 
 | Operator | Description             | Example         | Result   |
@@ -104,9 +104,8 @@ fi
 # Output: a is less than b
 ```
 
----
 
-## **Practical Usages**
+### **Practical Usages**
 1. **Math Operations in Scripts**
    ```bash
    radius=7

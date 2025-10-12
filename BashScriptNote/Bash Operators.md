@@ -1,7 +1,6 @@
 
-# Bash Operators Cheat Sheet
-
-## 1. Arithmetic Operators (သင်္ချာဆိုင်ရာ Operator)
+#### Bash Operators Cheat Sheet
+##### 1. Arithmetic Operators (သင်္ချာဆိုင်ရာ Operator)
 | Operator | Description |
 |----------|-------------|
 | `+`      | Addition (ပေါင်း) |
@@ -12,7 +11,7 @@
 | `++`     | Increment (တစ်လုံးတိုး) |
 | `--`     | Decrement (တစ်လုံးလျော့) |
 
-## 2. Comparison Operators (Integer)
+#### 2. Comparison Operators (Integer)
 | Operator | Description |
 |----------|-------------|
 | `-eq`    | Equal (ညီ) |
@@ -22,7 +21,7 @@
 | `-gt`    | Greater than (ကြီး) |
 | `-ge`    | Greater than or equal (ကြီး/ညီ) |
 
-## 3. String Comparison Operators
+#### 3. String Comparison Operators
 | Operator | Description |
 |----------|-------------|
 | `=`      | Equal (string တူ) |
@@ -32,14 +31,14 @@
 | `<`      | Alphabetically less than (alphabetically) |
 | `>`      | Alphabetically greater than (alphabetically) |
 
-## 4. Logical Operators 
+#### 4. Logical Operators 
 | Operator | Description |
 |----------|-------------|
 | `&&`     | Logical AND (နှစ်ခုစလုံးမှန်) |
 | `\|\|`     | Logical OR (တစ်ခုခုမှန်) |
 | `!`      | Logical NOT (true ကို false ပြောင်း) |
 
-## 5. File Test Operators 
+#### 5. File Test Operators 
 | Operator | Description |
 |----------|-------------|
 | `-e`     | File exists (ဖိုင်ရှိ) |
@@ -49,7 +48,7 @@
 | `-w`     | Write permission exists (ရေးခွင့်ရှိ) |
 | `-x`     | Execute permission exists (လုပ်ဆောင်ခွင့်ရှိ) |
 
-## 6. Assignment Operators 
+#### 6. Assignment Operators 
 | Operator | Description |
 |----------|-------------|
 | `=`      | Assign value (တန်ဖိုးပေး) |
@@ -58,7 +57,7 @@
 | `*=`     | Multiply and assign (မြှောက်ပြီးပေး) |
 | `/=`     | Divide and assign (စားပြီးပေး) |
 
-## 7. Bitwise Operators (Bit-level Operator)
+#### 7. Bitwise Operators (Bit-level Operator)
 | Operator | Description |
 |----------|-------------|
 | `&`      | Bitwise AND |
@@ -67,19 +66,19 @@
 | `<<`     | Left shift |
 | `>>`     | Right shift |
 
-## 8. Redirection Operators (Output Redirection)
+#### 8. Redirection Operators (Output Redirection)
 | Operator | Description |
 |----------|-------------|
 | `>`      | Redirect output to file (output ကိုဖိုင်ထဲထည့်) |
 | `>>`     | Append output to file (output ကို ဖိုင်ထဲမှာ ပေါင်းထည့်) |
 | `<`      | Redirect input from file (input ကိုဖိုင်ကထုတ်ယူ) |
 
-## 9. Pipe Operator (Command chaining)
+#### 9. Pipe Operator (Command chaining)
 | Operator | Description |
 |----------|-------------|
 | `\|`      | Pipe output from one command to another (output ကို နောက်တစ်ခုထဲထည့်) |
 
-## 10. Background and Job Control Operators
+#### 10. Background and Job Control Operators
 | Operator | Description |
 |----------|-------------|
 | `&`      | Run a command in the background |
@@ -87,9 +86,8 @@
 | `&&`     | Run next command if the previous one succeeded |
 | `\|\|`     | Run next command if the previous one failed |
 
----
 
-#  **1. Arithmetic Operators**  
+###  **1. Arithmetic Operators**  
  **Integer (whole numbers) တွေတွက်ပဲ အလုပ်လုပ်တယ်**  
 
  **Operators & Meaning**  
@@ -220,11 +218,11 @@ awk "BEGIN {print $a / $b}"  # 2.5
 ---
 
 ## **Summary**
-✅ `(( ))` → Basic integer math  
-✅ `let` → Variable-based arithmetic  
-✅ `expr` → Command-line math (Integer Only)  
-✅ `bc` → Floating point math  
-✅ `awk` → Advanced math operations  
+=> `(( ))` → Basic integer math  
+=> `let` → Variable-based arithmetic  
+=> `expr` → Command-line math (Integer Only)  
+=> `bc` → Floating point math  
+=> `awk` → Advanced math operations  
 
 Bash Arithmetic Operators Script  
 
@@ -245,7 +243,7 @@ echo "Exponentiation: $((x ** y))"
 
 ---
 
-#  **2. Comparison Operators (နှိုင်းယှဉ်ခြင်း)**
+##  **2. Comparison Operators (နှိုင်းယှဉ်ခြင်း)**
  **Number တွေတွက်ပဲ အလုပ်လုပ်တယ်**  
 
 **Operators & Meaning**  
@@ -272,7 +270,7 @@ fi
 
 ---
 
-#  **3. String Operators (စာသားတွေအတွက်)**
+##  **3. String Operators (စာသားတွေအတွက်)**
 **Operators & Meaning**  
 ```bash
 =   # Equal (တူ)
@@ -303,7 +301,7 @@ Strings are different
 
 ---
 
-#  **4. File Operators (ဖိုင်တွေ အတွက်)**
+##  **4. File Operators**
 **Operators & Meaning**  
 ```bash
 -f  # Is regular file (ဖိုင်လား)
@@ -327,7 +325,7 @@ fi
 
 ---
 
-#  **5. Logical Operators (AND, OR, NOT)**
+##  **5. Logical Operators (AND, OR, NOT)**
  **Operators & Meaning**  
 ```bash
 &&   # AND (နှစ်ခုစလုံးမှန်မှ TRUE)
@@ -470,8 +468,10 @@ Bash script တွင် logical operator များကို condition မျ
 1. **`&&`**  
    - နှစ်ခုလုံး true ဖြစ်မှ true ပြန်ပေးသည်။  
    - Example:  
-     ```bash
+  ```bash
+
      [ $a -eq 1 ] && [ $b -eq 2 ]
+     
      ```
 
 2. **`||`**  
@@ -558,7 +558,7 @@ echo "New Value: $num"
 
 ---
 
-#  **7. Bitwise Operators (Binary အတွက်)**
+##  **7. Bitwise Operators (Binary အတွက်)**
  **Operators & Meaning**  
 ```bash
 &   # AND

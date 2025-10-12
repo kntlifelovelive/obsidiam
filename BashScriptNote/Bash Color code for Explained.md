@@ -12,7 +12,7 @@ color_text() {
 - **`local color="$1"`** => Function ကို call မယ့်အခါ ပထမ **argument** (parameter) ကို `$color` ဟု သိမ်းထားမယ်။  
 - **`local text="$2"`** => ဒုတိယ argument ကို `$text` ဟု သိမ်းထားမယ်။  
 
-📌 **local** ဆိုတာ function ထဲမှာပဲ သက်ဝင်မယ့် variable တွေဆိုလိုတာဖြစ်ပြီး၊ အပြင်မှာတော့ သက်ဝင်မယ့် scope မဟုတ်ပါဘူး။
+ **local** ဆိုတာ function ထဲမှာပဲ သက်ဝင်မယ့် variable တွေဆိုလိုတာဖြစ်ပြီး၊ အပြင်မှာတော့ သက်ဝင်မယ့် scope မဟုတ်ပါဘူး။
 
 ---
 
@@ -40,9 +40,9 @@ color_text() {
 🔹 **`\033[0;34m`** ➜ Blue  
 🔹 **`\033[0m`** ➜ Reset (နောက်ထပ် text တွေ အရောင်မထိခိုက်အောင် default ပြန်ထား)  
 
-📌 **`\033`** ➜ Escape sequence (ANSI color ကို enable လုပ်တာ)  
-📌 **`[0;31m`** ➜ Format code (`31` = Red, `32` = Green, `34` = Blue)  
-📌 **`\033[0m`** ➜ Color ကို **reset** (default text color ပြန်သွားမယ်)  
+ **`\033`** ➜ Escape sequence (ANSI color ကို enable လုပ်တာ)  
+ **`[0;31m`** ➜ Format code (`31` = Red, `32` = Green, `34` = Blue)  
+ **`\033[0m`** ➜ Color ကို **reset** (default text color ပြန်သွားမယ်)  
 
 ---
 
@@ -67,9 +67,9 @@ Error: Something went wrong!  (in Red)
 Success: Everything is fine!   (in Green)
 Info: Please wait...           (in Blue)
 ```
-🔴🟢🔵 (အနီ / အစိမ်း / အပြာ) color တွေနဲ့ terminal မှာ output ထွက်မှာပါ။  
+ (အနီ / အစိမ်း / အပြာ) color တွေနဲ့ terminal မှာ output ထွက်မှာပါ။  
 
-📌 **Note** ➜ Terminal မှာ ANSI color support မရှိရင် အရောင် မပြနိုင်ပါဘူး။ (`echo -e` ကို အသုံးပြုတာက color support လုပ်ဖို့ပါ)  
+ **Note** ➜ Terminal မှာ ANSI color support မရှိရင် အရောင် မပြနိုင်ပါဘူး။ (`echo -e` ကို အသုံးပြုတာက color support လုပ်ဖို့ပါ)  
 
 ---
 
@@ -84,7 +84,7 @@ Example ➜ `color_text yellow "Warning: Proceed with caution!"`
 
 ---
 
-✨ **Summary**
+ **Summary**
 - Bash function **`color_text()`** ဟာ **text ကို color** ထည့်ပြီး print လုပ်ဖို့အသုံးပြုနိုင်ပါတယ်။
 - ANSI **escape codes** (`\033[0;XXm`) ကို သုံးပြီး **terminal text color** ပြောင်းနိုင်ပါတယ်။
 - **Case statement** ဖြင့် color ကို switch လုပ်ပြီး handle လုပ်ပါတယ်။
@@ -95,12 +95,12 @@ Example ➜ `color_text yellow "Warning: Proceed with caution!"`
 ###  **Bash Terminal မှာ သုံးလို့ရတဲ့ Color Code တွေ**  
 
 Terminal မှာ **Foreground (Text) Colors** နဲ့ **Background Colors** သုံးလို့ရပါတယ်။  
-🟢 **Foreground (Text) Color** ➜ `\033[0;Xm`  
-🟦 **Background Color** ➜ `\033[0;X;Ym`  
+ **Foreground (Text) Color** ➜ `\033[0;Xm`  
+**Background Color** ➜ `\033[0;X;Ym`  
 
----
 
-## ✅ **1. ANSI Color Code Table**
+
+##  **1. ANSI Color Code Table**
 | Color Name | Foreground (Text) | Background |
 |------------|------------------|------------|
 | **Black** | `\033[0;30m` | `\033[40m` |
@@ -112,7 +112,7 @@ Terminal မှာ **Foreground (Text) Colors** နဲ့ **Background Colors** 
 | **Cyan (Light Blue)** | `\033[0;36m` | `\033[46m` |
 | **White (Gray)** | `\033[0;37m` | `\033[47m` |
 
-👉 **Example Usage:**  
+**Example Usage:**  
 ```bash
 echo -e "\033[0;31mRed Text\033[0m"
 echo -e "\033[0;32mGreen Text\033[0m"
@@ -121,7 +121,7 @@ echo -e "\033[0;33mYellow Text\033[0m"
 
 ---
 
-## ✅ **2. Background Color ထည့်ပုံ**
+##  **2. Background Color ထည့်ပုံ**
 Text color နဲ့ Background color **combine** လုပ်လို့ရပါတယ်။  
 Format ➜ `\033[TextColor;BackgroundColorm`
 
@@ -136,11 +136,11 @@ echo -e "\033[1;33;44m Yellow Text on Blue Background \033[0m"
 - `\033[1;30;47m` ➜ **Black Text (30) on White Background (47)**  
 - `\033[1;33;44m` ➜ **Yellow Text (33) on Blue Background (44)**  
 
-📌 **`\033[0m`** ကို နောက်ဆုံးမှာ ထည့်ရတဲ့ အကြောင်းပြချက်က **reset** (default color ပြန်ထားဖို့) ပါ။  
+ **`\033[0m`** ကို နောက်ဆုံးမှာ ထည့်ရတဲ့ အကြောင်းပြချက်က **reset** (default color ပြန်ထားဖို့) ပါ။  
 
 ---
 
-## ✅ **3. Bold, Underline, Blinking Effects**
+##  **3. Bold, Underline, Blinking Effects**
 | Effect | Code | Example |
 |--------|------|---------|
 | **Bold** | `\033[1m` | `echo -e "\033[1mBold Text\033[0m"` |
@@ -163,7 +163,7 @@ echo -e "\033[4;31mUnderlined Red Text\033[0m"
 
 ---
 
-## ✅ **4. 256 Color Mode (Advanced)**
+## **4. 256 Color Mode (Advanced)**
 **Format:** `\033[38;5;Xm` (Foreground) | `\033[48;5;Xm` (Background)  
 🔹 **Example:**  
 ```bash
@@ -183,7 +183,7 @@ done
 
 ---
 
-## ✅ **5. True Color (24-bit)**
+##  **5. True Color (24-bit)**
 ```bash
 echo -e "\033[38;2;255;0;0mRed Text\033[0m"
 echo -e "\033[48;2;0;255;0mGreen Background\033[0m"
@@ -215,10 +215,10 @@ echo -e "\033[38;2;0;255;255m\033[48;2;128;0;128m Cyan on Purple \033[0m"
 
 ---
 
-## 🎨 **256 Color Mode (Advanced)**
+##  **256 Color Mode (Advanced)**
 **256 Color Mode** ကို သုံးလိုရတဲ့ **Foreground (Text)** နဲ့ **Background Color** တွေကို **ANSI Escape Codes** နဲ့ သုံးနိုင်ပါတယ်။  
 
-### ✅ **1. Basic Syntax**
+###  **1. Basic Syntax**
 ```bash
 \033[38;5;<COLOR_CODE>m  # Foreground (Text)
 \033[48;5;<COLOR_CODE>m  # Background
@@ -365,6 +365,7 @@ echo -e "\033[38;5;196;48;5;15m Red Text on White BG \033[0m"
 <td>51</td><td style="background:#00ffff;">&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
 </table>
 
+
 **More colors from 52 - 255 follow the same pattern**  
 **Use `for` loop to print the full table in Terminal**
 
@@ -388,7 +389,7 @@ done
 ---
 
 ## **256 Color Code Table**
-### **✅ Usage Format**
+### **Usage Format**
 - **Foreground (Text Color)** → `\033[38;5;<COLOR_CODE>m`
 - **Background (BG Color)** → `\033[48;5;<COLOR_CODE>m`
 - **Reset Color** → `\033[0m`

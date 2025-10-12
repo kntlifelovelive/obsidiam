@@ -1,6 +1,4 @@
 
-## Bash script in Variable and Special Variable 
-
 * * *
 
 ## **1\. Variables**
@@ -171,21 +169,22 @@ Hello World Bash
 
 ### **Special Variables Table**
 
-| Variable | Description |
-| --- | --- |
-| $0  | Script ကိုယ်တိုင်ရဲ့ နာမည် (path နဲ့အတူ) |
-| $1, $2, $3, ... | Command-line arguments တွေ (အစဉ်လိုက်) |
-| $#  | Command-line arguments တွေရဲ့ စုစုပေါင်း ဦးရေ |
-| $\* | Command-line arguments အားလုံးကို တစ်ခုတည်းသော string အဖြစ် |
-| $@  | Command-line arguments အားလုံးကို သီးခြားသီးခြား arguments အဖြစ် |
-| $?  | နောက်ဆုံး execute လုပ်ခဲ့တဲ့ command ရဲ့ exit status |
-| $$  | လက်ရှိ process ရဲ့ Process ID (PID) |
-| $!  | နောက်ဆုံး background process လုပ်ခဲ့တဲ့ command ရဲ့ PID |
-| $UID | လက်ရှိ user ရဲ့ user ID |
-| $USER | လက်ရှိ user ရဲ့ username |
-| $HOME | လက်ရှိ user ရဲ့ home directory |
-| $PWD | လက်ရှိ working directory |
-| $SHELL | လက်ရှိ user ကသုံးနေတဲ့ shell |
+| Variable        | Description                                                      |
+| --------------- | ---------------------------------------------------------------- |
+| $0              | Script ကိုယ်တိုင်ရဲ့ နာမည် (path နဲ့အတူ)                         |
+| $1, $2, $3, ... | Command-line arguments တွေ (အစဉ်လိုက်)                           |
+| $#              | Command-line arguments တွေရဲ့ စုစုပေါင်း ဦးရေ                    |
+| $\*             | Command-line arguments အားလုံးကို တစ်ခုတည်းသော string အဖြစ်      |
+| $@              | Command-line arguments အားလုံးကို သီးခြားသီးခြား arguments အဖြစ် |
+| $?              | နောက်ဆုံး execute လုပ်ခဲ့တဲ့ command ရဲ့ exit status             |
+| $$              | လက်ရှိ process ရဲ့ Process ID (PID)                              |
+| $!              | နောက်ဆုံး background process လုပ်ခဲ့တဲ့ command ရဲ့ PID          |
+| $UID            | လက်ရှိ user ရဲ့ user ID                                          |
+| $USER           | လက်ရှိ user ရဲ့ username                                         |
+| $HOME           | လက်ရှိ user ရဲ့ home directory                                   |
+| $PWD            | လက်ရှိ working directory                                         |
+| $SHELL          | လက်ရှိ user ကသုံးနေတဲ့ shell                                     |
+|                 |                                                                  |
 
 ## Note:
 
@@ -271,14 +270,15 @@ sum=$((num1 + num2))  # Arithmetic operation
 echo "Sum: $sum"
 ```
 
-**Arithmetic Operations in Bash**
-| Operator | ဖော်ပြချက်           |
-|----------|-------------------|
-| `+`      | ထပ်ပေါင်းခြင်း      |
-| `-`      | လျော့နုတ်ခြင်း       |
-| `*`      | မြှောက်ခြင်း        |
-| `/`      | Division (integer) |
-| `%`      | Remainder         |
+### **Arithmetic Operators in Bash**
+
+| Operator | ဖော်ပြချက် (မြန်မာ)           | ဥပမာ                   |
+| -------- | ----------------------------- | ---------------------- |
+| `+`      | ထပ်ပေါင်းခြင်း (Addition)     | `echo $((5 + 3)) # 8`  |
+| `-`      | လျော့နုတ်ခြင်း (Subtraction)  | `echo $((10 - 4)) # 6` |
+| `*`      | မြှောက်ခြင်း (Multiplication) | `echo $((6 * 7)) # 42` |
+| `/`      | Division (integer only)       | `echo $((20 / 3)) # 6` |
+| `%`      | ကျန်ပိုင်း (Modulus)          | `echo $((20 % 3)) # 2` |
 
 ---
 
@@ -328,16 +328,15 @@ echo "Number of Fruits: ${#fruits[@]}"
 ```
 
 ---
+### **Summary of Variable Types in Bash**
 
-**Summary**  
-| Variable Type        | ဖော်ပြချက်                                                                 |
-|----------------------|------------------------------------------------------------------------|
-| Special Variables    | Script, Command-line arguments, Process ID, Exit status စတာတွေကို သိမ်းဆည်းပေးတယ်။|
-| String Variables     | Text value တွေကို သိမ်းဆည်းဖို့ အသုံးပြုတယ်။                                   |
-| Integer Variables    | ဂဏန်းတွေကို သိမ်းဆည်းပြီး Arithmetic တွေလုပ်ဖို့ အသုံးပြုတယ်။                   |
-| Constant Variables   | တန်ဖိုးအပြောင်းအလဲမပြုနိုင်တဲ့ Variable မျိုး။                                     |
-| Array Variables      | တန်ဖိုးစုံတွေကို index အလိုက် သိမ်းဆည်းဖို့ အသုံးပြုတယ်။                        |
-
+| Variable Type      | ဖော်ပြချက်                                                                         |
+| ------------------ | ---------------------------------------------------------------------------------- |
+| Special Variables  | Script, Command-line arguments, Process ID, Exit status စတာတွေကို သိမ်းဆည်းပေးတယ်။ |
+| String Variables   | Text value တွေကို သိမ်းဆည်းဖို့ အသုံးပြုတယ်။                                       |
+| Integer Variables  | ဂဏန်းတွေကို သိမ်းဆည်းပြီး Arithmetic တွေလုပ်ဖို့ အသုံးပြုတယ်။                      |
+| Constant Variables | တန်ဖိုးအပြောင်းအလဲမပြုနိုင်တဲ့ Variable မျိုး။                                     |
+| Array Variables    | တန်ဖိုးစုံတွေကို index အလိုက် သိမ်းဆည်းဖို့ အသုံးပြုတယ်။                           |
 
 ---  
 

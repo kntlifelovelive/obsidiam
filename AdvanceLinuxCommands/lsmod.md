@@ -92,7 +92,7 @@ parm:           power_save:int
     sudo dmesg --ctime | tail -n 50
     # or use journalctl for systemd systems
     sudo journalctl -k -n 200
-    ```
+```
 
 
 
@@ -104,7 +104,9 @@ parm:           power_save:int
  
   lsmod
   
+
   ```
+  
 - Filter by name (example WiFi / sound)
 
 ```bash
@@ -149,15 +151,17 @@ parm:           power_save:int
     # or force (risky)
     sudo rmmod iwlwifi
     ```
-    
+
+
 - Load with parameter:
-    
+- 
     ```bash
     sudo modprobe iwlwifi power_save=0
     ```
     
     → `modprobe` က dependency handling ပေးတယ်၊ `insmod` က raw insert (path/file) သာ။ ([Oracle Docs](https://docs.oracle.com/en/operating-systems/oracle-linux/6/admin/ol_modparams.html?utm_source=chatgpt.com "5.4 About Module Parameters"))
     
+
 
 ## 6. Permanent option (boot-time) `/etc/modprobe.d/` config 
 
