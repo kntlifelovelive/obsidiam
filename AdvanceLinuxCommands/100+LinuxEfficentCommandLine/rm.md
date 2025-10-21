@@ -1,7 +1,7 @@
 
 ---
 
-##  **`rm` Command – How to Remove Files and Directories in Linux (15 Examples)**
+##  **`rm` Command – How to Remove Files and Directories in Linux (15 Examples)[RmAdvance](rmAdvance)**
 
 ###  **Usage**
 
