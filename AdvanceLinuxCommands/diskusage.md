@@ -1,11 +1,11 @@
 
 ---
 
-## 🖥️ Disk & Storage Management Cheatsheet (Arch Linux / Hyprland)
+##  Disk & Storage Management Cheatsheet (Arch Linux / Hyprland)
 
 
 
-##  Disk Usage Commands
+###  Disk Usage Commands
 
 ### **1a. `df` – Filesystem space**
 
@@ -199,9 +199,9 @@ sudo pacman -Rns $(pacman -Qtdq | grep -E 'debug|legacy|doc|moreutils|youtube-dl
 
 ---
 
-## 5️⃣ Cache Cleanup
+### 5 Cache Cleanup
 
-### **5a. Pacman cache**
+#### **5a. Pacman cache**
 
 ```bash
 sudo pacman -Sc
@@ -209,7 +209,7 @@ sudo pacman -Sc
 
 - **Note**: Deletes old package files, keeps latest
 
-### **5b. Yay/AUR cache**
+#### **5b. Yay/AUR cache**
 
 ```bash
 yay -Sc
@@ -227,7 +227,7 @@ ncdu ~/.cache
 
 ---
 
-##  Summary / Notes
+###  Summary / Notes
 
 - **df** → disk partition usage
 - **du** → folder/file usage
