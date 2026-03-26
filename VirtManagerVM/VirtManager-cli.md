@@ -152,7 +152,7 @@ virsh shutdown archlinux
 
 ---
 
-## 9. အရေးကြီးမှတ်ချက်
+## 9. Note
 
 1. **ပုံသေ URI** ကို `.bashrc` မှာ ထည့်ထားလိုက်ရင် terminal အသစ်ဖွင့်တိုင်း `qemu:///system` ကို auto ချိတ်ပေးပါလိမ့်မယ်။
 
